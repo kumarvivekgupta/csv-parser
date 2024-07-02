@@ -6,7 +6,7 @@ import employeeRoutes from './controllers/userController.js';
 const app = express();
 app.use(cors());
 
-app.use('/api/parse', employeeRoutes);
+app.use('/api', employeeRoutes);
 
 db.query('SELECT 1')
   .then(() => {
